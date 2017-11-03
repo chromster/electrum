@@ -314,7 +314,7 @@ class Blockchain(util.PrintError):
            #self.verify_header(header, previous_header, bits, target)
         #except:
            #return False
-           return True
+            return True
 
     def connect_chunk(self, idx, hexdata):
         try:
