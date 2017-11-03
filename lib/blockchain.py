@@ -311,7 +311,7 @@ class Blockchain(util.PrintError):
             return False
         bits, target = self.get_target(height // 2016)
         try:
-        return True
+            return True
 
     def connect_chunk(self, idx, hexdata):
         try:
