@@ -310,11 +310,11 @@ class Blockchain(util.PrintError):
         if prev_hash != header.get('prev_block_hash'):
             return False
         bits, target = self.get_target(height // 2016)
-        try:
-            self.verify_header(header, previous_header, bits, target)
+        #try:
+            #self.verify_header(header, previous_header, bits, target)
         #except:
             #return False
-        return True
+        #return True
 
     def connect_chunk(self, idx, hexdata):
         try:
