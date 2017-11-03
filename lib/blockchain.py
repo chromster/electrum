@@ -311,15 +311,15 @@ class Blockchain(util.PrintError):
             return False
         bits, target = self.get_target(height // 2016)
         try:
-            self.verify_header(header, previous_header, bits, target)
-        except:
-            return False
+            #self.verify_header(header, previous_header, bits, target)
+        #except:
+            #return False
         return True
 
     def connect_chunk(self, idx, hexdata):
         try:
             data = bfh(hexdata)
-            self.verify_chunk(idx, data)
+            #self.verify_chunk(idx, data)
             #self.print_error("validated chunk %d" % idx)
             self.save_chunk(idx, data)
             return True
